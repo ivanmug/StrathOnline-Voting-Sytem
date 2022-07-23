@@ -159,8 +159,8 @@
           <div class="col-sm-4 text-center">
             
             <img src="images/Nominee.png" width="100" height="100" alt=""/>
-            <h2 class="normalFont" style="font-size:28px;">VOTE ONLINE</h2>
-            <p><em>You need details of Candidates and You will be able to Vote.</em></p>
+            <h2 class="normalFont" style="font-size:28px;">ONLINE VOTING</h2>
+            <p><em>You will have details of candidates on the voting page and you can only vote once.</em></p>
 
           </div>
           <div class="col-sm-4 text-center">
@@ -174,7 +174,7 @@
             
             <img src="images/Stats.png" width="100" height="100" alt=""/>
             <h2 class="normalFont" style="font-size:28px;" >REPORT</h2>
-            <p><em>Shows the Graphical Data Representation of votes. And, It is in Admin's Control Panel.</em></p>
+            <p><em>The report shows the graphical representation of votes and it is in admin's Control Panel.</em></p>
 
           </div>
 </div>

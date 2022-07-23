@@ -3,7 +3,7 @@
 
 session_start();
 include '../includes/conn.php';
-echo "$Gender";
+
 
 
 if(isset($_POST['register']))
