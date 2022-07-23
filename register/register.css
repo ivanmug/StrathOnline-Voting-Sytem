@@ -1,0 +1,144 @@
+body
+{
+   
+
+
+background: url('https://strathmore.edu/wp-content/uploads/2021/02/scrt.png') no-repeat ; background-position: center center;background-size: cover; min-height:420px;
+
+
+
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+.register{
+    background: -webkit-linear-gradient(left, #4e4d5466, #226375);
+    margin-top: 3%;
+    padding-top: 3%;
+}
+.register-left{
+    text-align: center;
+    color: #fff;
+    margin-top: 4%;
+}
+.register-left input{
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    width: 60%;
+    background: green;
+    font-weight: bold;
+    color: white;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    cursor: pointer;
+     transition: all 1s ease-in-out;
+}
+.register-left input:focus,
+.register-left input:hover
+{
+  background-color: white;
+  color: black;
+  font-size: 20px;
+ 
+}
+.register-right{
+    background: #f8f9fa;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+}
+.register-left h3{
+ -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+    font-size: 40px;
+    margin-top: 50px;
+
+}
+
+    
+.register-left p{
+    font-weight: lighter;
+    padding: 12%;
+    margin-top: -9%;
+}
+.register .register-form{
+    padding: 10%;
+    margin-top: 10%;
+}
+.btnRegister{
+    float: right;
+    margin-top: 10%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #c02424;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+.btnRegister:focus,
+.btnRegister:hover
+{
+  background-color: #0073a5;
+}
+.register .nav-tabs{
+    margin-top: 3%;
+    border: none;
+    background: #0062cc;
+    border-radius: 1.5rem;
+    width: 28%;
+    float: right;
+}
+.register .nav-tabs .nav-link{
+    padding: 2%;
+    height: 34px;
+    font-weight: 600;
+    color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.register .nav-tabs .nav-link:hover{
+    border: none;
+}
+.register .nav-tabs .nav-link.active{
+    width: 100px;
+    color: #0062cc;
+    border: 2px solid #0062cc;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+.register-heading{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: -15%;
+    color: #c02424;
+    font-size: 50px;
+}
+.form-div { margin-top: 100px; border: 1px solid #e0e0e0; }
+#profileDisplay { display: block; height: 70px; width: 40%; margin: 0px auto; border-radius: 50%; }
+.img-placeholder {
+  width: 40%;
+  color: white;
+  height: 100%;
+  background: black;
+  opacity: .7;
+  height: 70px;
+  border-radius: 50%;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+.img-placeholder h4 {
+  margin-top: 40%;
+  color: white;
+}
+.img-div:hover .img-placeholder {
+  display: block;
+  cursor: pointer;
+}
