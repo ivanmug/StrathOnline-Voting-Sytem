@@ -5,7 +5,6 @@ session_start();
 include '../includes/conn.php';
 
 
-
 if(isset($_POST['register']))
 {
 $Admission_number=$_POST["anumber"];
@@ -33,18 +32,39 @@ $file=$_FILES["profileImage"];
       $fileDestination='uploads/'.$fileNameNew;
       move_uploaded_file($fileTmpName, $fileDestination);
 
-	$query="INSERT INTO voters(admission_number,firstname,lastname,password,photo,gender,email,course)VALUES('$Admission_number','$Firstname','$Lastname','$Password','$folders','$Gender','$Email','$Course')";
-	mysqli_query($conn,$query);
 
-	$_SESSION['message']="Record has been saved";
-	$_SESSION['msg_type']="success";
+            $sql = "SELECT * FROM voters WHERE admission_number = '$Admission_number'";
+            $query = $conn->query($sql);
 
-	header('location:../login/login.php');
+            if($query->num_rows > 1)
+
+                  {
+                    echo "<script>alert('Admission number is already taken!!')</script>";
+                    echo "<script>window.location='register.php'</script>";
+
+                   
+                  }
+            else
+                  {
+
+	             $query="INSERT INTO voters(admission_number,firstname,lastname,password,photo,gender,email,course)VALUES('$Admission_number','$Firstname','$Lastname','$Password','$folders','$Gender','$Email','$Course')";
+	             mysqli_query($conn,$query);
+
+	             $_SESSION['message']="Record has been saved";
+	             $_SESSION['msg_type']="success";
+
+	             header('location:../login/login.php');
+
+                  }
 }
-else
-{
-	echo "error";
-}
+
+
+
+
+    
+
+
+
 
 
 ?>

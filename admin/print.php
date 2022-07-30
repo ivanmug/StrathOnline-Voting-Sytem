@@ -10,11 +10,11 @@
         	$id = $row['id'];
         	$contents .= '
         		<tr>
-        			<td colspan="2" align="center" style="font-size:15px;"><b>'.$row['description'].'</b></td>
+        			<td colspan="2" align="center" style="font-size:15px;color:#364f9e;"><b>'.$row['description'].'</b></td>
         		</tr>
         		<tr>
-        			<td width="80%"><b>Candidates</b></td>
-        			<td width="20%"><b>Votes</b></td>
+        			<td width="80%" style="color:red;"><b>Candidates</b></td>
+        			<td width="20%"><b>Number of Votes</b></td>
         		</tr>
         	';
 
@@ -59,13 +59,14 @@
     $pdf->AddPage();  
     $content = '';  
     $content .= '
-      	<h2 align="center">'.$title.'</h2>
-      	<h4 align="center">Tally Result</h4>
+
+      	<h2 align="center" style="color: #dd9933;font-size:20px;">'.$title.'</h2>
+      	<h4 align="center">Election Result</h4>
       	<table border="1" cellspacing="0" cellpadding="3">  
       ';  
    	$content .= generateRow($conn);  
     $content .= '</table>';  
     $pdf->writeHTML($content);  
-    $pdf->Output('election_result.pdf', 'I');
+    $pdf->Output('strathmore_election_result.pdf', 'I');
 
 ?>

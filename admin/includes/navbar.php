@@ -1,8 +1,9 @@
 <header class="main-header">
   <!-- Logo -->
-  <a href="index.html" class="navbar-brand headerFont text-lg" style="color: white;"><strong><img itemprop="image" class="mobile" src="https://susa.strathmore.edu/wp-content/uploads/2019/09/studentaffairslogo.png" alt="Logo" style="height: 205%;"></strong></a>
+  <a href="../index.php" class="navbar-brand headerFont text-lg" style="color: white;"><strong><img itemprop="image" class="mobile" src="https://susa.strathmore.edu/wp-content/uploads/2019/09/studentaffairslogo.png" alt="Logo" style="height: 205%;"></strong></a>
   <!-- Header Navbar: style can be found in header.less -->
-  <nav class="navbar navbar-static-top" style="background-color: #364f9e!important;">
+  <nav class="navbar navbar-static-top" style="background-color: #364f9e!important;background-image: url(../images/header-background.png);
+    background-repeat: no-repeat; background-size: cover;">
     <!-- Sidebar toggle button-->
     <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
       <span class="sr-only">Toggle navigation</span>
@@ -23,7 +24,7 @@
 
               <p>
                 <?php echo $user['firstname'].' '.$user['lastname']; ?>
-                <small>Member since <?php echo date('M. Y', strtotime($user['created_on'])); ?></small>
+                <small>Strathmore Admin</small>
               </p>
             </li>
             <li class="user-footer">

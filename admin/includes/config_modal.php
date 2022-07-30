@@ -5,7 +5,7 @@
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title"><b>Configure</b></h4>
+              <h4 class="modal-title"><b>Strathmore Election</b></h4>
             </div>
             <div class="modal-body">
               <div class="text-center">

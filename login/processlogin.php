@@ -14,6 +14,8 @@
 		if($query->num_rows < 1){
 			$_SESSION['message']="Cannot find voter with the given Admission Number!!";
 				$_SESSION['msg_type']="danger";
+
+				 header('location:login.php');
 		}
 		else{
 			$row = $query->fetch_assoc();
@@ -24,13 +26,14 @@
 				
 				$_SESSION['message']="Incorrect password!!";
 				$_SESSION['msg_type']="danger";
+				 header('location:login.php');
 			}
 		}
 		
 	}
 	
 
-	header('location: login.php');
+	header('location: ../home.php');
 	
 
 

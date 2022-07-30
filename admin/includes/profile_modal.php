@@ -13,7 +13,7 @@
                   	<label for="username" class="col-sm-3 control-label">Username</label>
 
                   	<div class="col-sm-9">
-                    	<input type="text" class="form-control" id="username" name="username" value="<?php echo $user['username']; ?>">
+                    	<input type="text" class="form-control" id="username" name="username" value="<?php echo $voter['username']; ?>">
                   	</div>
                 </div>
                 <div class="form-group">

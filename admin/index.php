@@ -5,14 +5,22 @@
   	}
 ?>
 <?php include 'includes/header.php'; ?>
-<body class="hold-transition login-page" style="background-color: ;">
-<div class="login-box">
+<style>
+  body{
+    background: url('https://strathmore.edu/wp-content/uploads/2020/02/DSC06107-Chaplaincy.jpg')!important;
+    background-position: center!important;
+    background-size: auto!important;
+  }
+
+</style>
+<body class="hold-transition login-page">
+<div class="login-box" >
   	<div class="login-logo">
   		<h2><a href="../index.php" class="navbar-brand headerFont text-lg" style="color: white;"><strong><img itemprop="image" class="mobile" src="https://susa.strathmore.edu/wp-content/uploads/2019/09/studentaffairslogo.png" alt="Logo" style="height: 205%;"></strong></a></h2>
   	</div>
   
-  	<div class="login-box-body" style="background-color: #E4B43A;">
-    	<p class="login-box-msg" style="color: red;font-size: 20px;">Admin </p>
+  	<div class="login-box-body" style="background-color: #E4B43A;height: 250px!important;">
+    	<p class="login-box-msg" style="color: red;font-size: 20px;">ADMIN </p>
 
     	<form action="login.php" method="POST">
       		<div class="form-group has-feedback">

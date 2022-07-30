@@ -1,12 +1,6 @@
 <?php
   	session_start();
-  	if(isset($_SESSION['admin'])){
-    	header('location: admin/home.php');
-  	}
-
-    if(isset($_SESSION['voter'])){
-      header('location: ../home.php');
-    }
+  	
 ?>
 
 <!Doctype html>
@@ -21,7 +15,8 @@
     <!-- Bootstrap CSS -->
      <link rel="stylesheet"  href="../bootstrap.min.css">
 
-    <title>Login</title>
+    <title>STUDENT COUNCIL-LOGIN</title>
+     <link rel="icon" href="https://strathmore.edu/wp-content/uploads/2021/02/scouncil.png" type="image/icon type">
   </head>
   <body class="loginphp">
     <?php
@@ -49,7 +44,7 @@
 
     		<div class="login-lefti">
 
-    			<h2>Login</h2>
+    			<h2>LOGIN</h2>
     			<form action="processlogin.php" method="post">
 
     			<div class="form-group">
@@ -84,7 +79,7 @@
 				
 				<button type="submit" name="login" class="btn btn-primary">Login</button>
     			
-    			<p style="color: #0073a5;">Dont have an account?<a style="color: green;" href="../register/register.php">Sign Up</a></p>
+    			<p style="color: #0073a5;">Don't have an account?<a style="color: #c02424;" href="../register/register.php">Sign Up</a></p>
     			
     			</form>
     		</div>	

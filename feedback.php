@@ -4,20 +4,27 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  
     <title>Student Council | Strathmore University</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+   
     <link rel="stylesheet" href="css/style.css">
 
     </head>
-    <body >
+    <style>
+      .feed{
+         background-image: url("images/alumni.jpg");
+    background-position: center;
+    background-size: cover;
+      }
+      i{
+        color: black!important;
+      }
+    </style>
+    <body class="feed">
        <?php
 
     if(isset($_SESSION['message'])):?>
@@ -48,9 +55,15 @@
         
         </div>
 
+
         <div class="form-group">
-          <i class="fa fa-envelope" aria-hidden="true"></i>
-          <input type="email" placeholder="Email address" name="email"  class="form-control" required>
+           <label for="usertype" style="font-weight: bold;">Feedback Type:</label>
+         <select name="ftype" id="ftype" class="form-control"required>
+               <option value="Comments">Comments</option>
+                <option value="Suggestions">Suggestions</option>
+                <option value="Questions">Questions</option>
+        
+          </select>
         </div>
 
          <div class="form-group">

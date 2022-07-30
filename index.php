@@ -7,7 +7,7 @@
    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     
     <title>Student Council | Strathmore University</title>
-
+    <link rel="icon" href="https://strathmore.edu/wp-content/uploads/2021/02/scouncil.png" type="image/icon type">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -70,7 +70,7 @@
           text-decoration: none;
       }
       .ivan{
-        background-image: url("images/Student 2.jpg");
+        background-image: url("images/sc3.jpg");
         background-position: center;
     background-size: cover;
 
@@ -95,7 +95,9 @@
     <?php endif ?>
 	
 	<div class="container">
-  	<nav style="background-color: #364f9e!important;" class="navbar navbar-default navbar-fixed-top navbar-inverse
+  	<nav style="background-image: url(images/header-background.png);
+    background-repeat: no-repeat; background-size: cover;
+    color: #671010;" class="navbar navbar-default navbar-fixed-top navbar-inverse
     " role="navigation">
       <div class="container">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-nav-collapse">
@@ -105,15 +107,15 @@
         </button>
         <div class="navbar-header">
           
-          <a href="index.html" class="navbar-brand headerFont text-lg" style="color: white;"><strong><img itemprop="image" class="mobile" src="https://susa.strathmore.edu/wp-content/uploads/2019/09/studentaffairslogo.png" alt="Logo" style="height: 200%;"></strong></a>
+          <a href="index.php" class="navbar-brand headerFont text-lg" style="color: white;"><strong><img itemprop="image" class="mobile" src="https://susa.strathmore.edu/wp-content/uploads/2019/09/studentaffairslogo.png" alt="Logo" style="height: 150%;"></strong></a>
         </div>
 
         <div class="collapse navbar-collapse" id="example-nav-collapse">
           <ul class="nav navbar-nav">
             
            
-            <li><a href="#aboutTab"><span class="subFont"><strong>About Us</strong></span></a></li>
-            <li><a href="#feedbackTab"><span class="subFont"><strong>Contact Us</strong></span></a></li>
+            <li class="nav-item"><a href="#aboutTab" ><span class="subFont"><strong>About Us</strong></span></a></li>
+            <li class="nav-item"><a href="#feedbackTab"><span class="subFont"><strong>Contact Us</strong></span></a></li>
         	
           </ul>
           
@@ -129,7 +131,7 @@
         <div class="row">
           <div class="col-sm-12 ">
       <div class="jumbotron text-center text-block ivan" style="padding-top:170px;">
-              <img src="images/vote.png" alt="">
+              <img src="https://strathmore.edu/wp-content/uploads/2021/02/scouncil.png" alt="">
                   <h1 class="specialHead" style="color: white;">Student Council Voting System</h1>
                   <p class="normalFont" style="color: white; font-style: italic;font-family: sans-serif;"> Secure and Fast </p>
 
@@ -222,5 +224,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+     <script src="includes/scripts.php"></script>
   </body>
 </html>

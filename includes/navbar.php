@@ -15,14 +15,13 @@
             if(isset($_SESSION['student'])){
               echo "
                 <li><a href='index.php'>HOME</a></li>
-                <li><a href='transaction.php'>TRANSACTION</a></li>
+                
               ";
             } 
           ?>
         </ul>
       </div>
-      <!-- /.navbar-collapse -->
-      <!-- Navbar Right Menu -->
+     
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
           <li class="user user-menu">
@@ -34,8 +33,8 @@
           <li><a href="logout.php"><i class="fa fa-sign-out"></i> LOGOUT</a></li>  
         </ul>
       </div>
-      <!-- /.navbar-custom-menu -->
+      
     </div>
-    <!-- /.container-fluid -->
+   
   </nav>
 </header>
