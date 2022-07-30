@@ -203,15 +203,15 @@
         </div>
       
       <footer>
-        <div class="container">
+        <div class="container"style="background-image: url(images/alumni.jpg);width: 100%;">
           <div class="row">
             <div class="col-sm-6 text-center">
-             <h2 class="specialHead">Mugunga Ivan<br>Kudwoli Claudia</h2>
+             <h2 class="specialHead" style="color: white;">Mugunga Ivan<br>Kudwoli Claudia</h2>
             </div>
             <div class="col-sm-6 text-center">
               <img src="images/Facebook.png" width="50" height="50" alt="">
               <img src="images/Twitter.png" width="50" height="50" alt="">
-              <img src="images/GitHub.png" width="50" height="50" alt="">
+             <a href="https://github.com/ivanmug/StrathOnline-Voting-Sytem"> <img src="images/GitHub.png" width="50" height="50" alt=""></a>
             </div>
 
           </div>

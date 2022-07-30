@@ -19,7 +19,7 @@
           </a>
           <ul class="dropdown-menu">
             <!-- User image -->
-            <li class="user-header">
+            <li class="user-header" style="background-color: #dd9933!important;">
               <img src="<?php echo (!empty($user['photo'])) ? '../images/'.$user['photo'] : '../images/profile.jpg'; ?>" class="img-circle" alt="User Image">
 
               <p>

@@ -94,7 +94,7 @@
               <h4 class="modal-title"><b>Edit Voter</b></h4>
             </div>
             <div class="modal-body">
-              <form class="form-horizontal" method="POST" action="candidates_edit.php">
+              <form class="form-horizontal" method="POST" action="candidates_edit.php" enctype="multipart/form-data">
                 <input type="hidden" class="id" name="id">
                 <div class="form-group">
                     <label for="edit_firstname" class="col-sm-3 control-label">Firstname</label>
@@ -126,6 +126,13 @@
                           }
                         ?>
                       </select>
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label for="photo" class="col-sm-3 control-label">Photo</label>
+
+                    <div class="col-sm-9">
+                      <input type="file" id="photo" name="photo">
                     </div>
                 </div>
                 <div class="form-group">

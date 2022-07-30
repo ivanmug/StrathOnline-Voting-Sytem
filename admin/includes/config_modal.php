@@ -24,7 +24,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Close</button>
+              <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal" style="background-color: black;color: white;" ><i class="fa fa-close"></i> Close</button>
               <button type="submit" class="btn btn-success btn-flat" name="save"><i class="fa fa-save"></i> Save</button>
               </form>
             </div>
